@@ -1,0 +1,40 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu .nav-link {
+  color: #333;
+  text-decoration: none;
+  padding: .5rem 1rem;
+}
+
+.menu .nav-link:hover {
+  color: #000;
+  transition: background-color .3s ease;
+}
+
+.search-product {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Déplace SearchBar et ShoppingBasket vers la droite */
+}
+
+/* Réduit la marge à droite du composant Navigation */
+.col-md-6.text-center {
+  margin-right: -15px; /* Ajustez la valeur selon vos besoins */
+}  
+
+.search-icon {
+  color: #333;
+  cursor: pointer
+}

@@ -1,0 +1,161 @@
+/*HEADER*/
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.right-items {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin: 10px;
+  max-width: 100%;
+}
+
+.sign-up {
+  margin-left: 10px;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+.sign-in {
+  margin: 5px;
+  padding: 5px;
+}
+
+/*HERO-SECTION*/
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  height: 500px;
+  width: 80%;
+  margin: 20px  auto;
+}
+
+.rectangle-hero-section {
+  width: 100%;
+  background-color: transparent;
+}
+
+.column-container {
+  display: flex;
+  align-items: center;
+}
+
+.column-left {
+  flex: 1;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.column-right {
+  flex: 1;
+}
+
+.women-glasses {
+  max-width: 100%;
+  height: auto;
+}
+/*FEATURES PRODUCTS*/
+.features-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.feature-left {
+  flex: 1;
+}
+
+.feature-right {
+  margin-left: auto;
+}
+
+.feature-left h3 {
+  text-align: left;
+  margin: 0;
+}
+
+.feature-right a {
+  text-align: right;
+  margin: 0;
+}
+
+.features-products {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.man-glasses {
+  max-width: 100%;
+  height: auto;
+}
+/*RECOMMENDED
+ */
+.recommended-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.recommended {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.recommended-left {
+  flex: 1;
+}
+
+.recommended-right {
+  margin-left: auto;
+}
+
+.recommended-left h3 {
+  text-align: left;
+  margin: 0;
+}
+
+.recommended-right a {
+  text-align: right;
+  margin: 0;
+}
+
+.recommended-products {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.women-happy-glasses {
+  max-width: 100%;
+  height: 80%;
+}
+/*SHOP*/
+
+.ProductCard {
+  width: calc(33% - 1rem);
+  margin-bottom: 1rem;
+}
+
+.show-more {
+  background-color: transparent;
+  border: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}

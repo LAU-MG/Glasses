@@ -1,0 +1,19 @@
+.search-bar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  margin-left: 20px;
+}
+
+.search-bar input[type="text"] {
+  flex: 1;
+  border: none;
+  outline: none;
+}
+
+.search-bar i {
+  margin-right: 10px;
+}
