@@ -26,12 +26,27 @@
 .search-product {
   display: flex;
   align-items: center;
-  margin-left: auto; /* Déplace SearchBar et ShoppingBasket vers la droite */
+  margin-left: auto; 
 }
 
-/* Réduit la marge à droite du composant Navigation */
+.btn-btn-up{
+  background: #101010;
+    padding: 0.7rem;
+    border: 1px solid #101010;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-btn-in{
+  background: #101010;
+  padding: 0.7rem;
+  border: none;
+  color: #f2f2f2;
+  font-weight: bold;
+}
+
 .col-md-6.text-center {
-  margin-right: -15px; /* Ajustez la valeur selon vos besoins */
+  margin-right: -15px; 
 }  
 
 .search-icon {

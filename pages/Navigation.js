@@ -24,7 +24,7 @@ function Navigation() {
           <button className="nav-link">En Vedette</button>
         </Link>
       </Nav.Item>
-      <Nav.Item>
+      <Nav.Item>                                                                        
         <Link href="/Recommended" legacyBehavior>
           <button className="nav-link">Recommandé</button>
         </Link>
@@ -32,10 +32,13 @@ function Navigation() {
       <div className="d-flex justify-content-end">
         <Nav.Item>
           <div className="d-inline-flex align-items-center">
-            <SearchBar />
+          <div className="d-flex justify-content-end ml-auto">
+        <SearchBar />
+        </div>
+
             <ShoppingBasket />
-            <button className="btn btn-up mx-2">Sign Up</button>
-            <button className="btn btn-in">Sign In</button>
+            <button className="btn-btn-up mx-2">Sign Up</button>
+            <button className="btn-btn-in">Sign In</button>
           </div>
         </Nav.Item>
       </div>
