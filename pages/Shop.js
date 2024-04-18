@@ -1,16 +1,14 @@
 import React from 'react';
 import '../public/styles.css';
-import SearchBar from './SearchBar';
-import ShoppingBasket from './ShoppingBasket';
 import ProductCard from './ProductCard';
-import Footer from "./Footer";
 import Navigation from "./Navigation";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Featured() {
   const [showMore, setShowMore] = React.useState(false);
-  const maxItems = 6; // Number of items to display initially
+  const maxItems = 6;
 
+  // Function definition for handleShowMore
   const handleShowMore = () => {
     setShowMore(!showMore);
   };
@@ -35,35 +33,40 @@ function Featured() {
     <div className="App">
       <header>
         <div className="row">
-          <img className="logo" src="/" alt="logo"/>
-          <Navigation/>
-          <div className="right-items">
-            <SearchBar />
-            <ShoppingBasket />
-            <button className="sign-up">Sign Up</button>
-            <button className="sign-in">Sign In</button>
+          <div className="row align-items-center py-3">
+          <div className="col-md-3 text-center">
+            <img className="logo img-fluid" src="/images/salinkaLogo.png" alt="logo" />
           </div>
+          <div className="col-md-9">
+            <Navigation />
+          </div>
+        </div>
         </div>
       </header>
       <div className="features-container">
         <div className="features">
           <div className="shop-products">
+            <div className="product-grid">
+              {slicedProducts.map((product) => (
+                <ProductCard
+                  key={product.title}
+                  title={product.title}
+                  description={product.description}
+                  image={product.image}
+                  className="product-card small-card" // Ajouter la classe small-card pour réduire les cartes
+                />
+              ))}
+            </div>
           </div>
-          {slicedProducts.map((product) => (
-            <ProductCard
-              key={product.title}
-              title={product.title}
-              description={product.description}
-              image={product.image}
-            />
-          ))}
-          {products.length > maxItems && (
-            <button className="show-more" onClick={handleShowMore}>
-              {showMore ? 'Show Less' : 'Show More Items'}
-            </button>
-          )}
         </div>
       </div>
+      {products.length > maxItems && (
+        <div className="show-more-container">
+          <button className="show-more" onClick={handleShowMore}>
+            {showMore ? 'Show Less' : 'Show More Items'}
+          </button>
+        </div>
+      )}
     </div>
   );
 }

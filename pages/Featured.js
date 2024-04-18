@@ -1,48 +1,48 @@
 import React from 'react';
 import '../public/styles.css';
-import SearchBar from './SearchBar';
-import ShoppingBasket from './ShoppingBasket';
 import ProductCard from './ProductCard';
 import Footer from "./Footer";
 import Navigation from "./Navigation";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Link from "next/link";
 
 function Featured() {
   return (
     <div className="App">
       <header>
-        <div className="row">
-          <img className="logo" src="/images/salinkaLogo.png" alt="logo"/>
-          <Navigation/>
-          <div className="right-items">
-            <SearchBar />
-            <ShoppingBasket />
-            <button className="sign-up">Sign Up</button>
-            <button className="sign-in">Sign In</button>
+        <div className="container-fluid bg-light">
+          <div className="row align-items-center py-3">
+            <div className="col-md-3 text-center">
+              <img className="logo img-fluid" src="/images/salinkaLogo.png" alt="logo" />
+            </div>
+            <div className="col-md-9">
+              <Navigation />
+            </div>
           </div>
         </div>
       </header>
       <div className="hero-section">
-        <div className="rectangle-hero-section">
-          <div className="column-container">
-            <div className="column-left">
-              <h1>See everything with Clarity</h1>
-              <p>Buying eyewear should leave you happy and good-looking, with money in your pocket.
-                Glasses, sunglasses, and contacts—we’ve got your eyes covered.</p>
-              <button className="">Shop</button>
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-md-6">
+              <div className="column-container">
+                <div className="column-left">
+                  <h1>Featured Products</h1>
+                </div>
+              </div>
             </div>
-            <div className="column-right">
-              <img className="man-glasses" src="/images/Featured.png" alt="man wearing red glasses"/>
+            <div className="col-md-6">
+              <img className="man-glasses float-md-end" src="/images/Featured.png" alt="woman wearing red glasses"/>
             </div>
           </div>
         </div>
       </div>
       <div className="features-container">
         <div className="features">
-          <div className="feature-left">
-            <h3>Featured Products</h3>
+          <div className="title-products feature-left">
+            <h1>Featured Products</h1>
           </div>
-          <div className="feature-right">
+          <div className="see-all-link feature-right">
             <a href="#">See All</a>
           </div>
         </div>

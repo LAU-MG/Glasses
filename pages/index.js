@@ -1,7 +1,5 @@
 import React from 'react';
 import '../public/styles.css';
-import SearchBar from './SearchBar';
-import ShoppingBasket from './ShoppingBasket';
 import ProductCard from './ProductCard';
 import Footer from "./Footer";
 import Navigation from "./Navigation";
@@ -46,12 +44,12 @@ function App() {
       <div className="features-container container">
       <div className="features">
   <div className="row align-items-center">
-    <div className="col-md-8 d-flex justify-content-end">
+    <div className="title-products col-md-8 d-flex justify-content-end">
       <h3>Featured Products</h3>
     </div>
- 
+
   </div>
-     <div className="col-md-6 d-flex justify-content-end">
+     <div className="see-all-link col-md-6 d-flex justify-content-end">
       <a href="#">See All</a>
     </div>
 </div>
@@ -64,18 +62,52 @@ function App() {
               image="/images/Burnikk.png"
             />
           </div>
-          {/* Répétez les ProductCard pour les autres produits */}
+          <div className="col-md-4">
+            <ProductCard
+              title="Product 2"
+              description="Description"
+              image="/images/Kibal_Batal.png"
+            />
+          </div>
+          <div className="col-md-4">
+            <ProductCard
+              title="Product 2"
+              description="Description"
+              image="/images/Kibal_Batal.png"
+            />
+          </div>
+          <div className="col-md-4">
+            <ProductCard
+              title="Product 4"
+              description="Description"
+              image="/images/Buldit.png"
+            />
+          </div>
+          <div className="col-md-4">
+            <ProductCard
+              title="Product 5"
+              description="Description"
+              image="/images/Balakubak.png"
+            />
+          </div>
+          <div className="col-md-4">
+            <ProductCard
+              title="Product 6"
+              description="Description"
+              image="/images/Kulangot.png"
+            />
+          </div>
         </div>
       </div>
       <div className="features-container container">
       <div className="features">
   <div className="row align-items-center">
-    <div className="col-md-8 d-flex justify-content-end">
+    <div className=" title-products  col-md-8 d-flex justify-content-end">
       <h3>Recommended Products</h3>
     </div>
- 
+
   </div>
-     <div className="col-md-6 d-flex justify-content-end">
+     <div className="see-all-link col-md-6 d-flex justify-content-end">
       <a href="#">See All</a>
     </div>
 </div>
@@ -87,11 +119,47 @@ function App() {
               image="/images/Burnikk.png"
             />
           </div>
-          {/* Répétez les ProductCard pour les autres produits */}
-        </div>
+          <div className="col-md-4">
+            <ProductCard
+              title="Product 2"
+              description="Description"
+              image="/images/Kibal_Batal.png"
+            />
+          </div>
+          <div className="col-md-4">
+            <ProductCard
+              title="Product 2"
+              description="Description"
+              image="/images/Kibal_Batal.png"
+            />
+          </div>
+          <div className="col-md-4">
+            <ProductCard
+              title="Product 4"
+              description="Description"
+              image="/images/Buldit.png"
+            />
+          </div>
+          <div className="col-md-4">
+            <ProductCard
+              title="Product 5"
+              description="Description"
+              image="/images/Balakubak.png"
+            />
+          </div>
+          <div className="col-md-4">
+            <ProductCard
+              title="Product 6"
+              description="Description"
+              image="/images/Kulangot.png"
+            />
+          </div>
       </div>
+
+    </div>
       <Footer/>
     </div>
+
   );
 }
 

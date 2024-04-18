@@ -44,12 +44,19 @@
     font-weight: bold;
  }
 
+ .see-all-link a{
+   font-weight: bold;
+   color: black;
+ }
+.title-products h3{
+  font-weight: bold;
 
-/*FEATURES PRODUCTS*/
+}
+  /*FEATURES PRODUCTS*/
 .features-container {
   display: flex;
   flex-direction: column;
-  width: 80%; 
+  width: 80%;
   margin: 20px auto;
 }
 
@@ -81,13 +88,22 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 20px;
-} 
+}
 .man-glasses {
-  max-width: 100%;
+  max-width: 81%;
   height: auto;
+  object-fit: cover;
 }
 
 /*RECOMMENDED*/
+.title-recommended h1{
+  font-weight: bold;
+
+}
+
+.title-products{
+  font-weight: bold;
+}
 .recommended-container {
   display: flex;
   flex-direction: column;
@@ -131,16 +147,28 @@
 }
 
 /*SHOP*/
-
-.ProductCard {
-  width: calc(33% - 1rem);
-  margin-bottom: 1rem;
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1.2rem;
 }
 
-.show-more {
-  background-color: transparent;
-  border: 1px solid #ddd;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  margin-top: 1rem;
+.product-card {
+  width: 160px;
+  height: auto;
+  margin-bottom: 1.2rem;
+}
+
+.show-more-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.show-more{
+  background: #101010;
+  padding: 1rem;
+  border: 1px solid #101010;
+  color: #fff;
+  font-weight: bold;
 }

@@ -1,7 +1,5 @@
 import React from 'react';
 import '../public/styles.css';
-import SearchBar from './SearchBar';
-import ShoppingBasket from './ShoppingBasket';
 import ProductCard from './ProductCard';
 import Footer from "./Footer";
 import Navigation from "./Navigation";
@@ -11,25 +9,22 @@ function Recommended() {
   return (
     <div className="App">
       <header>
-        <div className="row">
-          <img className="logo" src="/" alt="logo"/>
-          <Navigation/>
-          <div className="right-items">
-            <SearchBar />
-            <ShoppingBasket />
-            <button className="sign-up">Sign Up</button>
-            <button className="sign-in">Sign In</button>
+        <div className="container-fluid bg-light">
+          <div className="row align-items-center py-3">
+            <div className="col-md-3 text-center">
+              <img className="logo img-fluid" src="/images/salinkaLogo.png" alt="logo" />
+            </div>
+            <div className="col-md-9">
+              <Navigation />
+            </div>
           </div>
         </div>
       </header>
       <div className="hero-section">
         <div className="rectangle-hero-section">
           <div className="column-container">
-            <div className="column-left">
-              <h1>See everything with Clarity</h1>
-              <p>Buying eyewear should leave you happy and good-looking, with money in your pocket.
-                Glasses, sunglasses, and contacts—we’ve got your eyes covered.</p>
-              <button className="">Shop now</button>
+            <div className="title-recommended column-left">
+              <h1 className="m-lg-5">Recommended Products</h1>
             </div>
             <div className="column-right">
               <img className="women-happy-glasses" src="/images/Recommended.png" alt="man wearing red glasses"/>
@@ -39,10 +34,10 @@ function Recommended() {
       </div>
       <div className="recommended-container">
         <div className="recommended">
-          <div className="recommended-left">
+          <div className="title-products recommended-left">
             <h3>Recommended Products</h3>
           </div>
-          <div className="recommended-right">
+          <div className="see-all-link recommended-right">
             <a href="#">See All</a>
           </div>
         </div>
