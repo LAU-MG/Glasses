@@ -1,8 +1,8 @@
 import React from 'react';
 import '../public/styles.css';
-import ProductCard from './ProductCard';
-import Footer from "./Footer";
-import Navigation from "./Navigation";
+import ProductCard from '../_components/ProductCard';
+import Footer from "../_components/Footer";
+import Navigation from "../_components/Navigation";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Recommended() {

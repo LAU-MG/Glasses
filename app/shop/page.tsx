@@ -1,7 +1,7 @@
 import React from 'react';
-import '../public/styles.css';
-import ProductCard from './ProductCard';
-import Navigation from "./Navigation";
+import './../public/styles.css';
+import ProductCard from '../_components/ProductCard';
+import Navigation from "../_components/Navigation";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Featured() {

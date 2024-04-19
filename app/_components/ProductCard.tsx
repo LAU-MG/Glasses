@@ -1,7 +1,7 @@
 import React from "react";
-import '../public/Card.css';
-import { Card, Button } from 'react-bootstrap';
-function ProductCard({ title, description, image }) {
+import './css/Card.css';
+import { Card } from 'react-bootstrap';
+function ProductCard({ title, description, image } : any) {
   return (
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={image} alt={title} />
