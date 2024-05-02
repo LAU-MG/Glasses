@@ -1,26 +1,28 @@
 'use client'
 
+import Link from 'next/link';
 import React from 'react';
 import { Nav } from 'react-bootstrap';
 import SearchBar from './SearchBar';
 import ShoppingBasket from './ShoppingBasket';
 import './css/Navigation.css';
 
+
 function Navigation() {
   return (
     <div className="nav-container">
       <Nav className="menu flex-column flex-md-row justify-content-between align-items-center">
         <Nav.Item>
-          {/*<Link to="/">Home</Link>*/}
+          <Link href="/">Home</Link>
         </Nav.Item>
         <Nav.Item>
-          {/*<Link to="/../../Shop/Shop">Shop</Link>*/}
+          <Link href="/../../Shop/Shop">Shop</Link>
         </Nav.Item>
         <Nav.Item>
-          {/*<Link to="/Featured">Featured</Link>*/}
+          <Link href="/Featured">Featured</Link>
         </Nav.Item>
         <Nav.Item>
-          {/*<Link to="/Recommended">Recommended</Link>*/}
+          <Link href="/Recommended">Recommended</Link>
         </Nav.Item>
         <div className="d-flex justify-content-end">
           <Nav.Item>

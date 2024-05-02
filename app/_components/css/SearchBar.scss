@@ -6,15 +6,15 @@
   border-radius: 5px;
   width: 300px;
   margin-left: 20px;
-}
 
-.search-bar input[type="text"] {
-  border: none; 
-  outline: none; 
-  background-color: white; 
-  padding: 0; 
-}
+  input[type="text"] {
+    border: none;
+    outline: none;
+    background-color: white;
+    padding: 0;
+  }
 
-.search-bar i {
-  margin-right: 10px;
+  i {
+    margin-right: 10px;
+  }
 }

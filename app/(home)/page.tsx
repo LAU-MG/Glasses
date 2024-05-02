@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css';
+import './styles.scss';
 import ProductCard from '../_components/ProductCard';
 import Footer from "../_components/Footer";
 import Navigation from "../_components/Navigation";
