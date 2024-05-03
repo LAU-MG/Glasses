@@ -5,7 +5,7 @@ import React from 'react';
 import { Nav } from 'react-bootstrap';
 import SearchBar from './SearchBar';
 import ShoppingBasket from './ShoppingBasket';
-import './css/Navigation.css';
+import './scss/Navigation.scss';
 
 
 function Navigation() {
@@ -13,16 +13,16 @@ function Navigation() {
     <div className="nav-container">
       <Nav className="menu flex-column flex-md-row justify-content-between align-items-center">
         <Nav.Item>
-          <Link href="/">Home</Link>
+          <Link href="../home">Home</Link>
         </Nav.Item>
         <Nav.Item>
-          <Link href="/../../Shop/Shop">Shop</Link>
+          <Link href="../shop/">Shop</Link>
         </Nav.Item>
         <Nav.Item>
-          <Link href="/Featured">Featured</Link>
+          <Link href="../featured/">Featured</Link>
         </Nav.Item>
         <Nav.Item>
-          <Link href="/Recommended">Recommended</Link>
+          <Link href="../recommended/">Recommended</Link>
         </Nav.Item>
         <div className="d-flex justify-content-end">
           <Nav.Item>

@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/ShoppingBasket.css';
+import './scss/ShoppingBasket.scss';
 
 function SearchBar() {
   return (

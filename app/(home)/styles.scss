@@ -1,8 +1,6 @@
-/* Variables */
 $primary-color: #101010;
 $secondary-color: lightgray;
 
-/* Mixins */
 @mixin button-styles {
   background: $primary-color;
   padding: 1rem;
@@ -99,11 +97,17 @@ $secondary-color: lightgray;
     margin-top: 20px;
   }
 
+  .column-container {
+    display: flex;
+    align-items: center;
+  }
+
   .man-glasses {
-    max-width: 81%;
+    max-width: 100%;
     height: auto;
     object-fit: cover;
   }
+
 }
 
 /* RECOMMENDED */
@@ -153,7 +157,8 @@ $secondary-color: lightgray;
 
   .women-happy-glasses {
     max-width: 100%;
-    height: 80%;
+    height: auto;
+    object-fit: cover;
   }
 }
 

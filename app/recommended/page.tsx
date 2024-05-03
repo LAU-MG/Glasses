@@ -1,25 +1,17 @@
+'use client'
+
+
 import React from 'react';
-import '../public/styles.css';
+import '../(home)/styles.scss';
+import Header from '../_components/Header';
 import ProductCard from '../_components/ProductCard';
 import Footer from "../_components/Footer";
-import Navigation from "../_components/Navigation";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/scss/bootstrap.scss';
 
 function Recommended() {
   return (
     <div className="App">
-      <header>
-        <div className="container-fluid bg-light">
-          <div className="row align-items-center py-3">
-            <div className="col-md-3 text-center">
-              <img className="logo img-fluid" src="/images/salinkaLogo.png" alt="logo" />
-            </div>
-            <div className="col-md-9">
-              <Navigation />
-            </div>
-          </div>
-        </div>
-      </header>
+      <Header />
       <div className="hero-section">
         <div className="rectangle-hero-section">
           <div className="column-container">

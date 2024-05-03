@@ -1,7 +1,7 @@
 'use client'
 
 import React from "react";
-import './css/Card.css';
+import './scss/Card.scss';
 import {Card} from 'react-bootstrap';
 
 function ProductCard({ title, description, image } : any) {

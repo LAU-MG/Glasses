@@ -1,8 +1,10 @@
+'use client'
+
 import React from 'react';
-import './../public/styles.css';
+import '../(home)/styles.scss';
+import Header from '../_components/Header';
 import ProductCard from '../_components/ProductCard';
-import Navigation from "../_components/Navigation";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/scss/bootstrap.scss';
 
 function Featured() {
   const [showMore, setShowMore] = React.useState(false);
@@ -31,18 +33,7 @@ function Featured() {
 
   return (
     <div className="App">
-      <header>
-        <div className="row">
-          <div className="row align-items-center py-3">
-          <div className="col-md-3 text-center">
-            <img className="logo img-fluid" src="/images/salinkaLogo.png" alt="logo" />
-          </div>
-          <div className="col-md-9">
-            <Navigation />
-          </div>
-        </div>
-        </div>
-      </header>
+      <Header />
       <div className="features-container">
         <div className="features">
           <div className="shop-products">
@@ -53,7 +44,7 @@ function Featured() {
                   title={product.title}
                   description={product.description}
                   image={product.image}
-                  className="product-card small-card" // Ajouter la classe small-card pour réduire les cartes
+                  className="product-card small-card"
                 />
               ))}
             </div>
