@@ -9,7 +9,7 @@ function Header() {
           <div className="col-md-3 text-center">
             <img className="logo img-fluid" src="/images/salinkaLogo.png" alt="logo" />
           </div>
-          <div className="col-md-12 col-lg-9"> {/* Modifiez la classe ici */}
+          <div className="col-md-12 col-lg-9">
             <Navigation />
           </div>
         </div>
