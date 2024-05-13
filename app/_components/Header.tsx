@@ -4,10 +4,12 @@ import Navigation from './Navigation';
 function Header() {
   return (
     <header>
-      <div className="container-fluid bg-light">
+      <div className="container-fluid">
         <div className="row align-items-center py-3">
-          <div className="col-md-3 text-center">
-            <img className="logo img-fluid" src="/images/salinkaLogo.png" alt="logo" />
+          <div className="col-md-2 text-center">
+            <a href="../home/" className="logo-container">
+              <img className="logo img-fluid" src="/images/salinkaLogo.png" alt="logo" />
+            </a>
           </div>
           <div className="col-md-12 col-lg-9">
             <Navigation />

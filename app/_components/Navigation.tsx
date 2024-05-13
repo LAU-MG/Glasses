@@ -12,18 +12,21 @@ function Navigation() {
   return (
     <div className="nav-container">
       <Nav className="menu flex-column flex-md-row justify-content-between align-items-center">
-        <Nav.Item>
-          <Link href="../(home)/">Home</Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Link href="../shop/">Shop</Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Link href="../featured/">Featured</Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Link href="../recommended/">Recommended</Link>
-        </Nav.Item>
+        <nav className="nav">
+          <div className="nav-item">
+            <a href="../(home)/" className="link">Home</a>
+          </div>
+          <div className="nav-item">
+            <a href="../shop/" className="link">Shop</a>
+          </div>
+          <div className="nav-item">
+            <a href="../featured/" className="link">Featured</a>
+          </div>
+          <div className="nav-item">
+            <a href="../recommended/" className="link">Recommended</a>
+          </div>
+        </nav>
+
         <div className="d-flex justify-content-end">
           <Nav.Item>
             <div className="d-inline-flex align-items-center">

@@ -15,7 +15,6 @@ $secondary-color: lightgray;
   justify-content: center;
   align-items: center;
   background-color: $secondary-color;
-  height: 500px;
   width: 80%;
   margin: 20px auto;
 
@@ -39,26 +38,33 @@ $secondary-color: lightgray;
       flex: 1;
     }
   }
-
   .women-glasses {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 460px;
     object-fit: cover;
   }
+
 
   .shop-now-btn {
     @include button-styles;
   }
 
-  .see-all-link a {
+  .see-all-link {
+    display: flex;
+    justify-content: flex-end;
     font-weight: bold;
-    color: black;
   }
 
+  .see-all-link a {
+    text-decoration: none;
+    color: inherit;
+  }
   .title-products h3 {
     font-weight: bold;
   }
+
 }
+
 
 /* FEATURES PRODUCTS */
 .features-container {
@@ -156,7 +162,8 @@ $secondary-color: lightgray;
   }
 
   .women-happy-glasses {
-    height: auto;
+    width: 100%;
+    height: 600px;
     object-fit: cover;
   }
 }

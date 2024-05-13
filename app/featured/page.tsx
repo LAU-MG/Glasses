@@ -32,9 +32,6 @@ function Featured() {
           <div className="title-products feature-left">
             <h1>Featured Products</h1>
           </div>
-          <div className="see-all-link feature-right">
-            <a href="#">See All</a>
-          </div>
         </div>
         <div className="features-products">
           <ProductCard

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './scss/ShoppingBasket.scss';
+import 'bootstrap/scss/bootstrap.scss';
+
 
 function SearchBar() {
   const [isBasketOpen, setIsBasketOpen] = useState(false);
@@ -12,6 +14,11 @@ function SearchBar() {
     setIsBasketOpen(false);
   };
 
+  const clearBasket = () => {
+    // Ajoutez ici la logique pour effacer le panier
+    console.log("Le panier a été vidé.");
+  };
+
   return (
     <div className={`shopping-basket-wrapper ${isBasketOpen ? 'open' : ''}`}>
       <button className="shopping-basket-icon m-3" onClick={toggleBasket}>
@@ -20,11 +27,18 @@ function SearchBar() {
         </svg>
       </button>
       <div className="shopping-basket">
-        <button className="close-button btn btn-danger" onClick={closeBasket}>
-          Close
-        </button>
-        <span className="clear-text">clearBasket</span>
-        <h2 className="font-weight-bold">My Basket</h2>
+        <div className="row align-items-center">
+          <h2 className="font-weight-bold text-sm">My Basket</h2>
+          <div className="button-group d-flex">
+            <button className="close-button " onClick={closeBasket}>
+              Close
+            </button>
+            <button className="clear-button" onClick={clearBasket}>
+              Clear Basket
+            </button>
+          </div>
+        </div>
+
       </div>
     </div>
   );

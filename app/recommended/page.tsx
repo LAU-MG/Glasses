@@ -29,9 +29,6 @@ function Recommended() {
           <div className="title-products recommended-left">
             <h3>Recommended Products</h3>
           </div>
-          <div className="see-all-link recommended-right">
-            <a href="#">See All</a>
-          </div>
         </div>
         <div className="recommended-products">
           <ProductCard

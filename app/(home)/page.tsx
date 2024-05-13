@@ -25,8 +25,10 @@ function App() {
               </div>
             </div>
             <div className="col-md-6">
+              <div className="column-container">
               <img className="women-glasses" src="/images/hero-section.png" alt="woman wearing red glasses"/>
             </div>
+          </div>
           </div>
         </div>
       </div>
@@ -34,12 +36,12 @@ function App() {
       <div className="features">
   <div className="row align-items-center">
     <div className="title-products col-md-8 d-flex justify-content-end">
-      <h3>Featured Products</h3>
+      <h3 className="fw-bold">Featured Products</h3>
     </div>
 
   </div>
-     <div className="see-all-link col-md-6 d-flex justify-content-end">
-      <a href="#">See All</a>
+     <div className="see-all-link col-md-6 d-flex justify-content-end fw-bold">
+       <Link href="../featured/">See All</Link>
     </div>
 </div>
         <div className="row">
@@ -91,12 +93,12 @@ function App() {
       <div className="features">
   <div className="row align-items-center">
     <div className=" title-products  col-md-8 d-flex justify-content-end">
-      <h3>Recommended Products</h3>
+      <h3 className="fw-bold">Recommended Products</h3>
     </div>
 
   </div>
-     <div className="see-all-link col-md-6 d-flex justify-content-end">
-      <a href="#">See All</a>
+     <div className="see-all-link col-md-6 d-flex justify-content-end fw-bold">
+       <Link href="../recommended/">See All</Link>
     </div>
 </div>
         <div className="row">

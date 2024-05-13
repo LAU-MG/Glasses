@@ -5,13 +5,26 @@
   margin-left: 0;
 }
 
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  padding: 0;
+}
+
 .nav-item {
-  text-align: left;
+  margin-right: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: #333;
 }
 
 .nav-item a {
   color: black;
   text-decoration: none;
+
 }
 
 .search-product {
