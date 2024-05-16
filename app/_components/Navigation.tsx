@@ -14,7 +14,7 @@ function Navigation() {
       <Nav className="menu flex-column flex-md-row justify-content-between align-items-center">
         <nav className="nav">
           <div className="nav-item">
-            <a href="../(home)/" className="link">Home</a>
+            <a href="../" className="link">Home</a>
           </div>
           <div className="nav-item">
             <a href="../shop/" className="link">Shop</a>

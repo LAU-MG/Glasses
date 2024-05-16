@@ -1,10 +1,8 @@
-// next.config.ts
-
-const path = require('path');
-
-module.exports = {
-  // Utiliser le dossier 'app' pour les fichiers de route
-  pages: {
-    app: path.join(__dirname, 'app'),
-  },
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  basePath: process.env?.NEXT_PUBLIC_BASE_PATH ?? '',
+  assetPrefix: process.env?.NEXT_PUBLIC_ASSET_PREFIX ?? '',
+  output: 'export',
 };
+
+module.exports = nextConfig;
