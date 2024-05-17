@@ -34,8 +34,34 @@
       background-color: #f2f2f2;
     }
   }
+  .product-card {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .product-card img {
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: auto;
+  }
+
+  .product-card:hover img {
+    transform: scale(1.1);
+  }
+
+
+}
+.zoom-effect {
+  overflow: hidden;
 }
 
+.zoom-effect img {
+  transition: transform 0.3s ease;
+}
+
+.zoom-effect:hover img {
+  transform: scale(1.1);
+}
 /* SHOP */
 .shop-products {
   display: grid;

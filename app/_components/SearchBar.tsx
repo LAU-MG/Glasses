@@ -1,64 +1,44 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useSearchParams } from 'next/navigation';
+import ProductCard from '../_components/ProductCard';
 
-const SearchBar: React.FC = () => {
-  const [query, setQuery] = useState<string>('');
-  const [results, setResults] = useState<string[]>([]);
+const SearchPage: React.FC = () => {
+  const searchParams = useSearchParams();
+  const q = searchParams.get('q') || ''; // Récupérer le terme de recherche depuis les paramètres de l'URL
 
-  const data = [
-    "Apple",
-    "Banana",
-    "Orange",
-    "Mango",
-    "Pineapple",
-    "Strawberry",
-    "Blueberry",
-    "Watermelon"
+  const searchResults = [
+    {
+      title: 'Product 1',
+      description: 'Description of Product 1',
+      image: '/images/product1.jpg',
+    },
+    {
+      title: 'Product 2',
+      description: 'Description of Product 2',
+      image: '/images/product2.jpg',
+    },
+
   ];
 
-  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setQuery(event.target.value);
-  };
-
-  const handleSearch = () => {
-    if (query.trim() === '') {
-      setResults([]);
-      return;
-    }
-    const filteredResults = data.filter(item =>
-      item.toLowerCase().includes(query.toLowerCase())
-    );
-    setResults(filteredResults);
-  };
-
-  const handleKeyPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
-    if (event.key === 'Enter') {
-      handleSearch();
-    }
-  };
+  const filteredResults = searchResults.filter(product =>
+    product.title.toLowerCase().includes(q.toLowerCase())
+  );
 
   return (
-    <div className="search-bar">
-      <input
-        type="text"
-        placeholder="Rechercher..."
-        value={query}
-        onChange={handleInputChange}
-        onKeyPress={handleKeyPress}
-      />
-      <button onClick={handleSearch}>Search</button>
-      <div>
-        {results.length > 0 ? (
-          results.map((result, index) => (
-            <div key={index}>
-              {result}
-            </div>
-          ))
-        ) : (
-          <div>No results found</div>
-        )}
+    <div>
+      <h1>Résultats de recherche pour "{q}"</h1>
+      <div className="search-results">
+        {filteredResults.map((product, index) => (
+          <ProductCard
+            key={index}
+            title={product.title}
+            description={product.description}
+            image={product.image}
+          />
+        ))}
       </div>
     </div>
   );
-}
+};
 
-export default SearchBar;
+export default SearchPage;
