@@ -4,6 +4,9 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import './scss/SearchBar.scss';
+import "../_components/scss/SearchBar.scss";
+
+
 
 const SearchBar: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState<string>('');
