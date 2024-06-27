@@ -27,8 +27,7 @@ function App() {
             </div>
             <div className="col-md-6">
               <div className="column-container">
-              <img className="women-glasses" src="/images/hero-section.png" alt="woman wearing red glasses"/>
-            </div>
+                <img className="women-glasses" src={`${process.env.PUBLIC_URL}/images/hero-section.png`} alt="woman wearing red glasses" />            </div>
           </div>
           </div>
         </div>
