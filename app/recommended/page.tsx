@@ -7,6 +7,7 @@ import Header from '../_components/Header';
 import ProductCard from '../_components/ProductCard';
 import Footer from "../_components/Footer";
 import 'bootstrap/scss/bootstrap.scss';
+import Image from 'next/image';
 
 function Recommended() {
   return (
@@ -19,7 +20,7 @@ function Recommended() {
               <h1 className="m-lg-5">Recommended Products</h1>
             </div>
             <div className="column-right">
-              <img className="women-happy-glasses" src="/images/Recommended.png" alt="man wearing red glasses"/>
+              <Image className="women-happy-glasses" src="/images/Recommended.png" alt="man wearing red glasses"/>
             </div>
           </div>
         </div>

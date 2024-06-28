@@ -6,6 +6,7 @@ import Footer from "../_components/Footer";
 import Header from "../_components/Header";
 import 'bootstrap/scss/bootstrap.scss';
 import Link from "next/link";
+import Image from 'next/image';
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
             </div>
             <div className="col-md-6">
               <div className="column-container">
-                <img className="women-glasses" src={`${process.env.PUBLIC_URL}/images/hero-section.png`} alt="woman wearing red glasses" />            </div>
+                <Image className="women-glasses" src={`${process.env.PUBLIC_URL}/images/hero-section.png`} alt="woman wearing red glasses" />            </div>
           </div>
           </div>
         </div>

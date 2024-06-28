@@ -1,11 +1,13 @@
-const withSass = require('@zeit/next-sass');
-const withCSS = require('@zeit/next-css');
+// next.config.js
+const isGithubActions = process.env.GITHUB_ACTIONS || false;
+let repo = '';
+if (isGithubActions) {
+  const repoPath = process.env.GITHUB_REPOSITORY.split('/');
+  repo = repoPath[1];
+}
+module.exports = {
+  basePath: isGithubActions ? `/${repo}` : '',
+  assetPrefix: isGithubActions ? `/${repo}/` : '',
+  trailingSlash: true, // Important pour la génération statique
 
-module.exports = withCSS(withSass({
-  basePath: process.env.NEXT_PUBLIC_BASE_PATH ?? '',
-  assetPrefix: process.env.NEXT_PUBLIC_ASSET_PREFIX ?? '',
-  output: 'export',
-  webpack(config, options) {
-    return config;
-  }
-}));
+};

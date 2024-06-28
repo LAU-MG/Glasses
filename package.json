@@ -5,22 +5,27 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "next build && next export && gh-pages -d out"
   },
   "dependencies": {
     "@types/react-router-dom": "^5.3.3",
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
     "bootstrap": "^5.3.3",
+    "css-loader": "^7.1.2",
     "dotenv": "^16.4.5",
-    "next": "^14.2.1",
+    "next": "^14.2.4",
     "node-sass": "^9.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.0",
-    "sass": "^1.77.6"
+    "sass": "^1.77.6",
+    "sass-loader": "^14.2.1",
+    "style-loader": "^4.0.0"
   },
   "devDependencies": {
     "@types/node": "^20.12.12",
@@ -28,6 +33,7 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.2",
+    "gh-pages": "^6.1.1",
     "typescript": "^5.4.5"
   }
 }

@@ -1,4 +1,4 @@
-'use client'
+// ./app/shop/page.tsx
 
 import React from 'react';
 import '../(home)/styles.scss';
@@ -7,10 +7,20 @@ import ProductCard from '../_components/ProductCard';
 import 'bootstrap/scss/bootstrap.scss';
 
 function Featured() {
+  return (
+    <div className="App">
+      <Header />
+      <ProductCardList />
+    </div>
+  );
+}
+
+function ProductCardList() {
   const [showMore, setShowMore] = React.useState(false);
+
   const maxItems = 6;
 
-  // Function definition for handleShowMore
+  // Fonction pour gérer l'affichage de plus d'éléments
   const handleShowMore = () => {
     setShowMore(!showMore);
   };
@@ -22,32 +32,28 @@ function Featured() {
     { title: "Product 4", description: "Description", image: "/images/Quake_Overload.png" },
     { title: "Product 5", description: "Description", image: "/images/Kutu.png" },
     { title: "Product 6", description: "Description", image: "/images/Tuluk.png" },
-    { title: "Product 1", description: "Description", image: "/images/Balakubak.png" },
-    { title: "Product 2", description: "Description", image: "/images/Pitaklan.png" },
-    { title: "Product 3", description: "Description", image: "/images/Burnikk.png" },
-    { title: "Product 4", description: "Description", image: "/images/Buldit.png" },
-    { title: "Product 5", description: "Description", image: "/images/Sipon_Malapot.png" },
+    { title: "Product 7", description: "Description", image: "/images/Balakubak.png" },
+    { title: "Product 8", description: "Description", image: "/images/Pitaklan.png" },
+    { title: "Product 9", description: "Description", image: "/images/Burnikk.png" },
+    { title: "Product 10", description: "Description", image: "/images/Buldit.png" },
+    { title: "Product 11", description: "Description", image: "/images/Sipon_Malapot.png" },
   ];
 
-  const slicedProducts = products.slice(0, showMore ? products.length : maxItems);
+  const slicedProducts = showMore ? products : products.slice(0, maxItems);
 
   return (
-    <div className="App">
-      <Header />
-      <div className="features-container">
-        <div className="features">
-          <div className="shop-products">
-            <div className="product-grid">
-              {slicedProducts.map((product) => (
-                <ProductCard
-                  key={product.title}
-                  title={product.title}
-                  description={product.description}
-                  image={product.image}
-                  className="product-card small-card"
-                />
-              ))}
-            </div>
+    <div className="features-container">
+      <div className="features">
+        <div className="shop-products">
+          <div className="product-grid">
+            {slicedProducts.map((product, index) => (
+              <ProductCard
+                key={product.title} // Utilisation d'une clé unique comme product.title
+                title={product.title}
+                description={product.description}
+                image={product.image}
+              />
+            ))}
           </div>
         </div>
       </div>

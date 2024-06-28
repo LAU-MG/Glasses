@@ -1,5 +1,4 @@
-'use client';
-
+// ProductCard.tsx
 import React from 'react';
 import './scss/Card.scss';
 import { Card } from 'react-bootstrap';

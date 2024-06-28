@@ -26,7 +26,7 @@ const SearchPage: React.FC = () => {
 
   return (
     <div>
-      <h1>Résultats de recherche pour "{q}"</h1>
+      <h1>Résultats de recherche pour &quot;{q}&quot;</h1>
       <div className="search-results">
         {filteredResults.map((product, index) => (
           <ProductCard

@@ -4,6 +4,7 @@ import Header from '../_components/Header';
 import ProductCard from '../_components/ProductCard';
 import Footer from "../_components/Footer";
 import 'bootstrap/scss/bootstrap.scss';
+import Image from 'next/image';
 
 function Featured() {
   return (
@@ -21,7 +22,7 @@ function Featured() {
             </div>
             <div className="col-md-6">
               <div className="column-container">
-                <img className="man-glasses float-md-end" src="/images/Featured.png" alt="woman wearing red glasses"/>
+                <Image className="man-glasses float-md-end" src="/images/Featured.png" alt="woman wearing red glasses"/>
               </div>
             </div>
           </div>
