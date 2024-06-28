@@ -2,14 +2,13 @@
 
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import SearchBar from './SearchBar';
 import ProductCard from './ProductCard';
 
 const products = [
   { title: 'Ray-Ban', description: 'Classic Aviator Sunglasses', image: '/images/rayban.png' },
   { title: 'Oakley', description: 'Sport Performance Sunglasses', image: '/images/oakley.png' },
   { title: 'Gucci', description: 'Fashionable Sunglasses', image: '/images/gucci.png' },
-  // Ajoutez plus de produits ici
+  //valeur test
 ];
 
 const MainApp = () => {
@@ -24,7 +23,7 @@ const MainApp = () => {
 
   return (
     <div className="container">
-      <SearchBar onSearch={handleSearch} />
+      {/*<SearchBar onSearch={handleSearch} />*/}
       <div className="row">
         {searchResults.map((product, index) => (
           <div className="col-md-4" key={index}>

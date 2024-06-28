@@ -10,14 +10,17 @@
   },
   "dependencies": {
     "@types/react-router-dom": "^5.3.3",
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
     "bootstrap": "^5.3.3",
+    "dotenv": "^16.4.5",
     "next": "^14.2.1",
     "node-sass": "^9.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.0",
-    "sass": "^1.76.0"
+    "sass": "^1.77.6"
   },
   "devDependencies": {
     "@types/node": "^20.12.12",
